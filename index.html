@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1100px)" href="css/tablet.css">
+
+    <title>Playing with CSS Animations</title>
+</head>
+<body>
+    <header>
+        <h1>Playing with CSS Animations</h1>
+    </header>
+    <main>
+        <!-- <h2>Basic Animations</h2> -->
+        <div class="main-grid main-grid-colour-1">
+            <div class="grid-item">
+                <div class="grid-item-header">Shrink</div>
+                <div class="grid-item-content anim-content-color-1 column-container">
+                    <div class="anim-simple-content anim-shrink"><i class="fas fa-dollar-sign"></i></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Grow</div>
+                <div class="grid-item-content anim-content-color-2 column-container">
+                    <div class="anim-simple-content anim-grow"><i class="fas fa-tree"></i></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Bounce</div>
+                <div class="grid-item-content anim-content-color-3 column-container">
+                    <div class="anim-simple-content anim-bounce"><i class="fas fa-basketball-ball"></i></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Shake</div>
+                <div class="grid-item-content anim-content-color-4 column-container">
+                    <div class="anim-simple-content anim-shake"><i class="fas fa-wine-glass"></i></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Spin</div>
+                <div class="grid-item-content anim-content-color-1 column-container">
+                    <div class="anim-simple-content anim-spin"><i class="fas fa-fan"></i></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Rotate</div>
+                <div class="grid-item-content anim-content-color-2 column-container">
+                    <div class="anim-simple-content anim-rotate"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Move</div>
+                <div class="grid-item-content anim-content-color-3 column-container">
+                    <div class="anim-simple-content anim-move"><i class="fas fa-shoe-prints"></i></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Fade</div>
+                <div class="grid-item-content anim-content-color-4 column-container">
+                    <div class="anim-simple-content anim-fade"><i class="fas fa-cloud-rain"></i></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+        </div>
+
+        <!-- <h2>Other Animations</h2> -->
+        <div class="main-grid main-grid-colour-2">
+            <div class="grid-item">
+                <div class="grid-item-header">Wavy Balls</div>
+                <div class="bouncing-balls-container">
+                    <div class="bouncing-ball bouncing-ball-1"></div>
+                    <div class="bouncing-ball bouncing-ball-2"></div>
+                    <div class="bouncing-ball bouncing-ball-3"></div>
+                    <div class="bouncing-ball bouncing-ball-4"></div>
+                    <div class="bouncing-ball bouncing-ball-5"></div>
+                    <div class="bouncing-ball bouncing-ball-6"></div>
+                </div>
+                <div class="grid-item-footer">move mouse over ball</div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Progress Indicator 1</div>
+                <div class="grid-item-content column-container">
+                    <div class="progress-indicator-1"></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Progress Indicator 2</div>
+                <div class="grid-item-content column-container">
+                    <div class="progress-indicator-2"></div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Progress Indicator 3</div>
+                <div class="grid-item-content column-container">
+                    <div class="progress-indicator-3">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="grid-item-footer">Credit: <a target="_blank" href="https://loading.io/css/">Pure CSS Loader</a></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Expanding Menu</div>
+                <div class="grid-item-content column-container">
+                    <div class="expanding-menu-container">
+                        <div class="main-menu"><i class="fas fa-info-circle"></i></div>
+                        <div class="main-menu-bottom-cover"></div>
+                        <div class="sub-menu sub-menu-1"><i class="fas fa-plus-square"></i></div>
+                        <div class="sub-menu sub-menu-2"><i class="fas fa-folder-open"></i></div>
+                        <div class="sub-menu sub-menu-3"><i class="fas fa-copy"></i></div>
+                        <div class="sub-menu sub-menu-4"><i class="fas fa-trash"></i></div>
+                    </div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+        </div>
+
+        <!-- <h2>Text Animations</h2> -->
+        <div class="main-grid main-grid-colour-3">
+            <div class="grid-item">
+                <div class="grid-item-header">Sliding Text</div>
+                <div class="grid-item-content column-container">
+                    <div class="slider-container">
+                        I like 
+                        <div class="slider-window">
+                            <div class="slider-text-starter">Coffee</div>
+                            <div class="slider-text-2">Tea</div>
+                            <div class="slider-text-3">Wine</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item-footer">Credit: <a target=”_blank” href="https://redstapler.co/minimal-css-text-sliding-animation/">RedStapler</a></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Speech Bubble</div>
+                <div class="grid-item-content column-container">
+                    <div class="speech-bubble">
+                        say what...
+                    </div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Stripe Text</div>
+                <div class="grid-item-content column-container">
+                    <div class="stripe-text">
+                        PLAY
+                    </div>
+                </div>
+                <div class="grid-item-footer">Credit: <a target=”_blank” href="https://codepen.io/zitrusfrisch/pen/fjbal">Daniel Reimer</a></div>
+            </div>
+        </div>
+
+        <!-- <h2>Image Animations</h2> -->
+        <div class="main-grid main-grid-colour-4">
+            <div class="grid-item">
+                <div class="grid-item-header">Image Effect</div>
+                <div class="grid-item-content column-container">
+                    <figure id="anim-fading-image">
+                        <img src="img/cherry-blossom-4098908-small.png" alt="Lovely Autumn">
+                        <figcaption>Lovely Autumn</figcaption>
+                    </figure>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Fake Animation &#128521</div>
+                <div class="grid-item-content column-container">
+                    <video id="video-nature" autoplay muted loop>
+                        <source src="img/Mountain river.mp4" type="video/mp4" />
+                        <source src="img/Mountain river.webm" type="video/webm" />
+                    </video>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header">Card Flip</div>
+                <div class="grid-item-content column-container">
+                    <div class="flip-card-container">
+                        <div class="flip-card flip-card-front"></div>
+                        <div class="flip-card flip-card-back"></div>
+                    </div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+        </div>
+
+        <!-- <h2>Button Animations</h2> -->
+        <div class="main-grid main-grid-colour-1">
+            <div class="grid-item">
+                <div class="grid-item-header"></div>
+                <div class="grid-item-content column-container">
+                    <div class="button-lifted button-color-4">Lift Me</div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header"></div>
+                <div class="grid-item-content column-container">
+                    <div class="button-ripples button-ripples-color">Ripples</div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-header"></div>
+                <div class="grid-item-content column-container">
+                    <div class="button-slider button-color-3">Slider</div>
+                </div>
+                <div class="grid-item-footer"></div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>Last updated on 11-May-2020</p>
+    </footer>
+</body>
+</html>

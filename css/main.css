@@ -1,0 +1,926 @@
+/*-----------------------------------*/
+/* Imports must be at the top. */
+/*-----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+/*-----------------------------------*/
+/* Global CSS Variables */
+/*-----------------------------------*/
+:root {
+    /* https://colorhunt.co/palette/129857 */
+    --colour-primary: white;
+    /* --colour-primary: #faf6e9; */
+    /* --colour-secondary: #9c9b96; */
+    --colour-secondary: #e63f3f;
+    --text-colour-light: #fffdf6;
+    --text-colour-dark: #494949;
+    --colour-misc-background: #e3e3e3;
+    --card-background: #f3f3f3;
+    --misc-colour-1: #687dc4;
+    --misc-colour-2: #b4c896; 
+    --misc-colour-3: #c27ab8;
+    --misc-colour-4: #f5b79b;
+}
+
+
+
+
+/*-----------------------------------*/
+/* Font */
+/*-----------------------------------*/
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+/*-----------------------------------*/
+/* Resets */
+/*-----------------------------------*/
+a {
+    color: var(--text-colour-dark);
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+/*-----------------------------------*/
+/* Utilities i.e. Global Settings */
+/*-----------------------------------*/
+body {
+    background-color: var(--colour-primary);
+}
+
+
+
+
+
+/*-----------------------------------*/
+/* Header */
+/*-----------------------------------*/
+header {
+    padding: 2rem 0rem;
+}
+
+header h1 {
+    color: var(--text-colour-dark);
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+
+
+/*-----------------------------------*/
+/* Main */
+/*-----------------------------------*/
+main h2 {
+    color: var(--text-colour-dark);
+    font-family: 'Dekko', sans-serif;
+}
+
+.main-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 4rem;
+    /* margin-bottom: 4rem; */
+}
+
+.main-grid-colour-1 {
+    background-color: var(--misc-colour-1);
+}
+
+.main-grid-colour-2 {
+    background-color: var(--misc-colour-2);
+}
+
+.main-grid-colour-3 {
+    background-color: var(--misc-colour-3);
+}
+
+.main-grid-colour-4 {
+    background-color: var(--misc-colour-4);
+}
+
+
+
+
+
+/*-----------------------------------*/
+/* Header */
+/*-----------------------------------*/
+footer {
+    margin: 2rem 0rem;
+}
+
+footer p {
+    text-align: center;
+    color: var(--text-colour-dark);
+    font-size: 0.75rem;
+}
+
+
+
+
+
+/*-----------------------------------*/
+/* Grid Elements */
+/*-----------------------------------*/
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+
+    width: 14rem;
+    height: 14rem;
+
+    margin: 0.5rem;
+
+    /* copied over from main index html page */
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+    border-radius: 5px;
+}
+
+.grid-item-header {
+    align-self: center;
+
+    color: var(--text-colour-dark);
+    padding: 0.5rem;
+
+    font-weight: bold;
+    font-family: 'Dekko', sans-serif;
+    text-transform: uppercase;
+}
+
+.grid-item-content {
+    flex: 1;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-footer {
+    align-self: center;
+
+    color: var(--text-colour-dark);
+    padding: 0.5rem;
+
+    font-family: 'Dekko', sans-serif;
+}
+
+
+
+
+
+/*-----------------------------------*/
+/* Animation Specific Elements */
+/*-----------------------------------*/
+.anim-simple-content {
+    display: inline;
+    margin: auto;
+
+    font-size: 4rem;
+    text-transform: uppercase;
+
+    cursor: default;
+}
+
+.anim-content-color-1 {
+    color: var(--misc-colour-1);
+}
+
+.anim-content-color-2 {
+    color: var(--misc-colour-2);
+}
+
+.anim-content-color-3 {
+    color: var(--misc-colour-3);
+}
+
+.anim-content-color-4 {
+    color: var(--misc-colour-4);
+}
+
+
+
+
+
+/*-----------------------------------*/
+/* Buttons */
+/*-----------------------------------*/
+.button-color-1 {
+    background-color: var(--misc-colour-1);
+    color: var(--text-colour-light);
+}
+
+.button-color-2 {
+    background-color: var(--misc-colour-2);
+    color: var(--text-colour-light);
+}
+
+.button-color-3 {
+    background-color: var(--misc-colour-3);
+    color: var(--text-colour-light);
+}
+
+.button-color-4 {
+    background-color: var(--misc-colour-4);
+    color: var(--text-colour-light);
+}
+
+.button-lifted {
+    display: inline-block;
+
+    border-radius: 10rem;
+    padding: 0.5rem 2rem;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    color: var(--text-colour-light);
+
+    transition: all 0.2s;
+}
+
+.button-lifted:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------------------- */
+
+.button-ripples {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .3s;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+/*
+    The trick is to use ::after as the fake element and hide it
+    behind the real button, then show it on mouse-hover.
+*/
+.button-ripples::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .6s;
+}
+
+.button-ripples:hover {
+    /* need a transform so the pseudo element can be hovered-over */
+    transform: translateY(-0.1px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.button-ripples:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.button-ripples-color {
+    background-color: var(--misc-colour-2);
+    color: var(--text-colour-light);
+}
+
+.button-ripples-color::after {
+    background-color: var(--misc-colour-2);
+}
+
+/* -------------------------------------------------- */
+
+/*
+    The trick is to create a background about twice as long as the button
+    with grandient. When mouse is hovered the long background is shifted
+    left so that the initially inivisible side on the right is shown.
+*/
+.button-slider {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .3s;
+    position: relative;
+    border: none;
+    cursor: pointer;
+
+    background-image: linear-gradient(120deg, transparent 50%, var(--misc-colour-1) 50%);
+
+    background-size: 220%;
+
+    transition: all 0.5s;
+}
+
+.button-slider:hover {
+    background-position: right 100%;
+    color: var(--text-colour-light);
+}
+
+
+
+
+
+
+
+/*-----------------------------------*/
+/* Images and Videos */
+/*-----------------------------------*/
+#anim-fading-image {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+/*
+    The trick is to make the image much bigger then the container
+    area. Then scale it up/down on mouse-hover while making sure
+    the centre of the image is not moved.
+*/
+#anim-fading-image > img {
+    position: absolute;
+    clip-path: circle(25% at 50% 50%);
+    transform: translate(-6rem, -6rem) scale(1);
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+
+#anim-fading-image > figcaption {
+    position: absolute;
+    color: var(--text-colour-light);
+    font-weight: bold;
+
+    opacity: 0;
+    bottom: -0.6rem;
+    left: 0.4rem;
+
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+
+#anim-fading-image:hover > img {
+    /* blur is causing some border flickers on Chromium based browsers */
+    filter: /*blur(1px)*/ brightness(50%);
+    clip-path: circle(30% at 50% 50%);
+    transform: translate(-6rem, -6rem) scale(0.75);
+}
+
+#anim-fading-image:hover > figcaption {
+    opacity: 1;
+    transform: translateY(-3.75rem);
+}
+
+/* -------------------------------------------------- */
+
+/*
+    The trick is to use backface-visibility to hide
+    the backside when rotated along the Y-axis.
+*/
+.flip-card-container {
+    position: relative;
+    height: 8rem;
+    width: 6rem;
+
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+}
+
+.flip-card {
+    height: 8rem;
+    width: 6rem;
+    
+    backface-visibility: hidden;
+    
+    transition: all .8s ease;
+}
+
+.flip-card-front {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background: url(../img/abstract-painting-1690351.jpg) center/cover no-repeat;
+}
+
+.flip-card-back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    background: url(../img/1200px-The_Scream.jpg) center/cover no-repeat;
+    
+    transform: rotateY(180deg);
+}
+
+.flip-card-container:hover .flip-card-front {
+    transform: rotateY(-180deg);
+}
+
+.flip-card-container:hover .flip-card-back {
+    transform: rotateY(0);
+}
+
+
+
+
+
+/*-----------------------------------*/
+/* Text */
+/*-----------------------------------*/
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.25rem;
+    color: var(--text-colour-dark);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*
+    The trick is to use a 'masking' div here which is like a little window
+    where items can slide in and out of this window at any time.
+*/
+.slider-window {
+    /* here we define the 'masking' div */
+    height: 1.75rem;
+    padding-left: 0.5rem;
+    color: var(--text-colour-light);
+
+    /* this hides the rest of the slider text that fall outside of the window */
+    overflow: hidden;
+}
+
+.slider-window div {
+    /* makes sure text is centred */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* each slider item is height + margin-bottom = 3.75rem in total height */
+    height: 1.75rem;
+    margin-bottom: 2rem;
+
+    padding: 2px 0.5rem;
+}
+
+.slider-text-starter {
+    background: var(--misc-colour-1);
+
+    -webkit-animation: slide-text 5s linear infinite;
+    animation: slide-text 5s linear infinite;
+}
+
+.slider-text-2 {
+    background: var(--misc-colour-2);
+}
+
+.slider-text-3 {
+    background: var(--misc-colour-4);
+}
+
+.slider-text-starter:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/* -------------------------------------------------- */
+
+/*
+    The trick is to define the speech bubble arrow using
+    a pseudo element. Note using effects like opacity 
+    simply doesn't look good as the pseudo element is not
+    in sync properly with the main div element.
+*/
+.speech-bubble {
+    /* centres the speech bubble content e.g. the text */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* needed for the pseudo element position */
+    position: absolute;
+
+    width: 11rem;
+    height: 4rem;
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    border-radius: 5rem;
+    color: var(--text-colour-dark);
+    background-color: none;
+
+    transition: all 0.2s;
+}
+
+.speech-bubble::after {
+    content: "";
+    
+    position: absolute;
+    top: -0.5rem;
+    left: 3rem;
+    
+    width: 1rem;
+    height: 1rem;
+    
+    background-color: none;
+
+    /* here is the little triangle  */
+    transform: rotate(135deg);
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+
+    transition: all 0.2s;
+}
+
+.speech-bubble:hover {
+    color: var(--text-colour-light);
+    background-color: var(--misc-colour-4);
+}
+
+.speech-bubble:hover::after {
+    background-color: var(--misc-colour-4);
+}
+
+/* -------------------------------------------------- */
+
+/*
+    The trick is to use an image to clip the text and
+    make the image position moving along the x-axis.
+*/
+.stripe-text {
+    font-family: 'Sigmar One', 'Noto Sans', 'Dekko', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+
+    /* get the image to clip the text */
+    background: url(../img/stripe-text.png) repeat-y;
+    background-clip: text;
+
+    /* transparent to allow clipped image show through */
+    color: transparent;
+
+    -webkit-animation: play-stripe-text 4s linear infinite;;
+    animation: play-stripe-text 4s linear infinite;
+}
+
+.stripe-text:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+
+
+/*-----------------------------------*/
+/* Others */
+/*-----------------------------------*/
+.bouncing-balls-container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 3rem;
+    padding: 0rem 1rem;
+}
+
+.bouncing-ball {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 1rem;
+
+    -webkit-animation: play-bouncing-ball 1s linear infinite alternate both;
+    animation: play-bouncing-ball 1s linear infinite alternate both;
+}
+
+.bouncing-ball:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.bouncing-ball-1 {
+    background-color: var(--misc-colour-1);
+
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.0s;
+}
+
+.bouncing-ball-2 {
+    background-color: var(--misc-colour-2);
+
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.1s;
+}
+
+.bouncing-ball-3 {
+    background-color: var(--misc-colour-3);
+
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.bouncing-ball-4 {
+    background-color: var(--misc-colour-4);
+
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.3s;
+}
+
+.bouncing-ball-5 {
+    background-color: var(--misc-colour-1);
+
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.4s;
+}
+
+.bouncing-ball-6 {
+    background-color: var(--misc-colour-2);
+
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.5s;
+}
+
+/* -------------------------------------------------- */
+
+.progress-indicator-1 {
+    background-color: var(--misc-colour-1);
+
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+
+    position: relative;
+
+    -webkit-animation: 1.5s linear 0.5s infinite normal both running play-progress-indicator-1;
+    animation: 1.5s linear 0.5s infinite normal both running play-progress-indicator-1;
+}
+
+.progress-indicator-1::before {
+    content: " ";
+    
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--misc-colour-1);
+
+    position: absolute;
+    left: -1.5rem;
+    top: 0rem;
+
+    -webkit-animation: 1.5s linear 0s infinite normal both running play-progress-indicator-1;
+    animation: 1.5s linear 0s infinite normal both running play-progress-indicator-1;
+}
+
+.progress-indicator-1::after {
+    content: " ";
+
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--misc-colour-1);
+
+    position: absolute;
+    left: 1.5rem;
+    top: 0rem;
+
+    -webkit-animation: play-progress-indicator-1 1.5s linear 1s infinite normal both running;
+    animation: play-progress-indicator-1 1.5s linear 1s infinite normal both running;
+}
+
+/* -------------------------------------------------- */
+
+.progress-indicator-2 {
+    border: 1rem solid var(--colour-misc-background);
+    border-top: 1rem solid var(--misc-colour-3);
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+
+    -webkit-animation: play-progress-indicator-2 1.5s linear infinite;
+    animation: play-progress-indicator-2 1.5s linear infinite;
+}
+
+/* -------------------------------------------------- */
+
+.progress-indicator-3 {
+    width: 6rem;
+    height: 6rem;
+    
+    position: relative;
+}
+
+.progress-indicator-3 div {
+    width: 1rem;
+    height: 6rem;
+
+    position: absolute;
+
+    border-radius: 0.25rem;
+    background-color: var(--misc-colour-2);
+
+    -webkit-animation: play-progress-indicator-3 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation: play-progress-indicator-3 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.progress-indicator-3 div:nth-child(1) {
+    top: 0;
+    left: 0.5rem;
+
+    -webkit-animation-delay: -0.48s;
+    animation-delay: -0.48s;
+}
+
+.progress-indicator-3 div:nth-child(2) {
+    top: 0;
+    left: 2.5rem;
+
+    background-color: var(--misc-colour-2);
+
+    -webkit-animation-delay: -0.24s;
+    animation-delay: -0.24s;
+}
+
+.progress-indicator-3 div:nth-child(3) {
+    top: 0;
+    left: 4.5rem;
+
+    background-color: var(--misc-colour-2);
+
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+} 
+
+/* -------------------------------------------------- */
+
+/*
+    The trick is to hide the sub-menus behind the main menu
+    initially. Then when the mouse is hovered over the main
+    menu, the sub-menus will translate into their positions.
+*/
+.expanding-menu-container {
+    /* this stacks content */
+    position: relative;
+
+    width: 4rem;    
+    height: 4rem;
+    
+    /* this centres content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expanding-menu-container > .main-menu {
+    position: absolute;
+    
+    font-size: 5rem;
+    color: var(--colour-secondary);
+
+    /* this hides the sub-menus but assumes font is solid */
+    z-index: 4;
+}
+
+/*
+    This sits between the menu menu and the sub-menus in the Z axis
+    so that the sub-menus below the main menu is blocked visually.
+*/
+.expanding-menu-container > .main-menu-bottom-cover {
+    position: absolute;
+    top: -0.4rem; /* minor fix to position */
+    right: 0rem;
+
+    width: 5rem;
+    height: 5rem;
+
+    font-size: 5rem;
+    background-color: var(--card-background);
+    border-radius: 10rem;
+
+    z-index: 3;
+}
+
+.expanding-menu-container > .sub-menu {
+    position: absolute;
+
+    z-index: 2;
+    
+    font-size: 2rem;
+}
+
+.expanding-menu-container > .sub-menu-1 {
+    color: var(--misc-colour-1);
+}
+
+.expanding-menu-container > .sub-menu-2 {  
+    color: var(--misc-colour-2);
+}
+
+.expanding-menu-container > .sub-menu-3 {
+    color: var(--misc-colour-3);
+}
+
+.expanding-menu-container > .sub-menu-4 {
+    color: var(--misc-colour-4);
+}
+
+.expanding-menu-container:hover > .sub-menu-1 {
+    animation-name: play-sub-menu-1;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.expanding-menu-container:hover > .sub-menu-2 {
+    animation-name: play-sub-menu-2;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.expanding-menu-container:hover > .sub-menu-3 {
+    animation-name: play-sub-menu-3;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.expanding-menu-container:hover > .sub-menu-4 {
+    animation-name: play-sub-menu-4;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+/*-----------------------------------*/
+/* Misc */
+/*-----------------------------------*/
+#video-nature {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+}
